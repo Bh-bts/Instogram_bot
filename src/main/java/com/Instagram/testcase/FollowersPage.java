@@ -20,8 +20,8 @@ public class FollowersPage extends Followers_Obj {
 		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(20));
 		w.until(ExpectedConditions.visibilityOf(userName));
 
-		//ss = "57543233224%3AGbxZ7gOIX0NFv1%3A26%3AAYf9ZPJr4VQScu6MRZDxH91U5VvhrjT0kTyjEIzjDw";
-		ss=null;
+		ss = "57543233224%3AGbxZ7gOIX0NFv1%3A26%3AAYf9ZPJr4VQScu6MRZDxH91U5VvhrjT0kTyjEIzjDw";
+		// ss = null;
 		if (ss != null) {
 
 			driver.manage().addCookie(new Cookie("sessionid", ss));
@@ -41,12 +41,15 @@ public class FollowersPage extends Followers_Obj {
 		}
 		w.until(ExpectedConditions.visibilityOf(popUpNotification));
 		popUpNotification.click();
-		
-		w.until(ExpectedConditions.visibilityOf(popUpNotification));
-		
-		if(driver.findElements(By.xpath("//button[text()='Not Now']")).size() > 0) {
+
+		if (ss == null) {
+
+			w.until(ExpectedConditions.visibilityOf(popUpNotification));
+		}
+
+		if (driver.findElements(By.xpath("//button[text()='Not Now']")).size() > 0) {
 			popUpNotification.click();
-			
+
 		}
 
 		w.until(ExpectedConditions.visibilityOf(seeAll_btn));
@@ -61,7 +64,12 @@ public class FollowersPage extends Followers_Obj {
 
 				WebElement a = driver.findElement(By.xpath("//div[" + i + "]/div[3]/button"));
 				a.click();
-				Thread.sleep(5000);
+				Thread.sleep(30000);
+
+				if (driver.findElements(By.xpath("//button[text()='OK']")).size() > 0) {
+					warnPop.click();
+
+				}
 			}
 
 			driver.navigate().refresh();
@@ -73,15 +81,14 @@ public class FollowersPage extends Followers_Obj {
 
 	public void abc() throws InterruptedException, IOException {
 
-FileReader reader = new FileReader("config.properties");
-		
+		FileReader reader = new FileReader("config.properties");
+
 		Properties p = new Properties();
 		p.load(reader);
-		
+
 		String username = p.getProperty("user_name");
 		String password = p.getProperty("password");
-		
-		
+
 		userName.sendKeys(username);
 		passWord.sendKeys(password);
 		logIn_btn.click();
