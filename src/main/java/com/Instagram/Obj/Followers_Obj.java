@@ -14,7 +14,7 @@ public abstract class Followers_Obj extends AllBrowsers{
 	public int i=0;
 	
 	public @FindBy(xpath = "//div[text()='See All']") WebElement seeAll_btn;
-	public @FindBy(xpath = "//div[1]/div[3]/button") WebElement follow_btn;
+	public @FindBy(xpath = "//div[1]//div[3]//button") WebElement follow_btn;
 	
 	//Limit while following
 	public @FindBy(xpath = "//button[text()='OK']") WebElement warnPop;

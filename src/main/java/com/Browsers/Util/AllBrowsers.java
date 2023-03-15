@@ -3,6 +3,7 @@ package com.Browsers.Util;
 import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -24,8 +25,10 @@ public class AllBrowsers extends PropertiesClass{
 	public static WebDriver startBrowser(String browserName, String Weburl) {
 
 		if (browserName.equals("chrome")) {
+			ChromeOptions co = new ChromeOptions();
+			co.addArguments("--remote-allow-origins=*");
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(co);
 		} else if (browserName.equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();

@@ -30,7 +30,7 @@ public class FollowersPage extends Followers_Obj {
 
 			for (int i = 1; i <= 25; i++) {
 
-				WebElement a = driver.findElement(By.xpath("//div[" + i + "]/div[3]/button"));
+				WebElement a = driver.findElement(By.xpath("//div[" + i + "]//div[3]//button"));
 				a.click();
 				Thread.sleep(30000);
 
