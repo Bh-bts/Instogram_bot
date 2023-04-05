@@ -30,12 +30,13 @@ public class CommentHomePage extends Comment_Obj {
 
 				w.until(ExpectedConditions.visibilityOf(cmtBox));
 
-				String[] strings = {"good", "very good", "pretty", "gorgeous", "beautiful❤", "Impressive", "Look beautiful", "Wow🤩","❤❤❤", "👏👏👏","🤩"};
+				String[] strings = {"good", "very good", "pretty", "gorgeous", "beautiful❤", "Impressive", "Look beautiful"};
 		        Random random = new Random();
 		        String randomString = strings[random.nextInt(strings.length)];
 				
 		        Thread.sleep(3000);
 				cmtBox.click();
+				Thread.sleep(1000);
 				cmtBox.sendKeys(randomString);
 				Thread.sleep(2000);
 

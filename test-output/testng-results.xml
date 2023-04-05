@@ -2,34 +2,34 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-15T21:49:41 IST" name="AddComments" finished-at="2023-03-15T21:53:16 IST" duration-ms="214385">
+  <suite started-at="2023-04-05T20:31:41 IST" name="Default suite" finished-at="2023-04-05T20:34:21 IST" duration-ms="159906">
     <groups>
     </groups>
-    <test started-at="2023-03-15T21:49:41 IST" name="Test" finished-at="2023-03-15T21:53:16 IST" duration-ms="214385">
+    <test started-at="2023-04-05T20:31:41 IST" name="Default test" finished-at="2023-04-05T20:34:21 IST" duration-ms="159906">
       <class name="com.Instagram.MainPage.Comments_MainPage">
-        <test-method signature="addComments()[pri:0, instance:com.Instagram.MainPage.Comments_MainPage@2caa5d7c]" started-at="2023-03-15T21:49:41 IST" name="addComments" finished-at="2023-03-15T21:53:16 IST" duration-ms="214212" status="FAIL">
+        <test-method signature="addComments()[pri:0, instance:com.Instagram.MainPage.Comments_MainPage@38fc5554]" started-at="2023-04-05T20:31:41 IST" name="addComments" finished-at="2023-04-05T20:34:21 IST" duration-ms="159704" status="FAIL">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[unknown error: ChromeDriver only supports characters in the BMP
-  (Session info: chrome=111.0.5563.65)
+  (Session info: chrome=111.0.5563.147)
 Build info: version: '4.6.0', revision: '79f1c02ae20'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f63ef75cc7184dbbb35117e0cc81150f, sendKeysToElement {id=9ea6dd16-09ef-4c31-8473-4967328a3fe0, value=[Ljava.lang.CharSequence;@3e53c4ad}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Bhavin\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52875}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52875/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (f63ef75cc7184dbbb35117e0cc81150f)] -> xpath: //div[@role='dialog']//article//textarea[@aria-label='Add a comment…']]
-Session ID: f63ef75cc7184dbbb35117e0cc81150f]]>
+Command: [f2ef12826dfecef8e67fd89723c1600a, sendKeysToElement {id=805fd34d-6984-483f-bfaf-4a0a1f822040, value=[Ljava.lang.CharSequence;@2e5e6fc4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Bhavin\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58987}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58987/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (f2ef12826dfecef8e67fd89723c1600a)] -> xpath: //div[@role='dialog']//article//textarea[@aria-label='Add a comment…']]
+Session ID: f2ef12826dfecef8e67fd89723c1600a]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: unknown error: ChromeDriver only supports characters in the BMP
-  (Session info: chrome=111.0.5563.65)
+  (Session info: chrome=111.0.5563.147)
 Build info: version: '4.6.0', revision: '79f1c02ae20'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f63ef75cc7184dbbb35117e0cc81150f, sendKeysToElement {id=9ea6dd16-09ef-4c31-8473-4967328a3fe0, value=[Ljava.lang.CharSequence;@3e53c4ad}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Bhavin\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52875}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52875/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (f63ef75cc7184dbbb35117e0cc81150f)] -> xpath: //div[@role='dialog']//article//textarea[@aria-label='Add a comment…']]
-Session ID: f63ef75cc7184dbbb35117e0cc81150f
+Command: [f2ef12826dfecef8e67fd89723c1600a, sendKeysToElement {id=805fd34d-6984-483f-bfaf-4a0a1f822040, value=[Ljava.lang.CharSequence;@2e5e6fc4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Bhavin\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58987}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58987/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (f2ef12826dfecef8e67fd89723c1600a)] -> xpath: //div[@role='dialog']//article//textarea[@aria-label='Add a comment…']]
+Session ID: f2ef12826dfecef8e67fd89723c1600a
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -50,8 +50,8 @@ at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Delegating
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
 at jdk.proxy2/jdk.proxy2.$Proxy14.sendKeys(Unknown Source)
-at com.Instagram.testcase.CommentHomePage.incComment(CommentHomePage.java:39)
-at com.Instagram.MainPage.Comments_MainPage.addComments(Comments_MainPage.java:22)
+at com.Instagram.testcase.CommentHomePage.incComment(CommentHomePage.java:40)
+at com.Instagram.MainPage.Comments_MainPage.addComments(Comments_MainPage.java:23)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -87,6 +87,6 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- addComments -->
       </class> <!-- com.Instagram.MainPage.Comments_MainPage -->
-    </test> <!-- Test -->
-  </suite> <!-- AddComments -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

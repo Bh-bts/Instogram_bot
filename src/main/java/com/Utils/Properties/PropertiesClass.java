@@ -12,7 +12,7 @@ public class PropertiesClass {
 	public static Properties fileConfig() throws IOException {
 
 		String projectPath = System.getProperty("user.dir");
-		File file = new File(projectPath + "/config.properties");
+		File file = new File(projectPath + "/src/main/resources/config.properties");
 
 		FileReader reader = new FileReader(file);
 
@@ -45,6 +45,21 @@ public class PropertiesClass {
 		String session = a.getProperty("session_id");
 		return session;
 
+	}
+
+	public static String setBrowser() throws IOException {
+
+		fileConfig();
+		String browser = a.getProperty("browser");
+		return browser;
+
+	}
+
+	public static String setURL() throws IOException {
+
+		fileConfig();
+		String url = a.getProperty("url");
+		return url;
 	}
 
 }

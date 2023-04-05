@@ -7,12 +7,13 @@ import org.testng.annotations.Test;
 
 import com.Browsers.Util.AllBrowsers;
 import com.Instagram.testcase.FollowersPage;
+import com.Utils.Properties.PropertiesClass;
 
 public class Followers_MainPage extends FollowersPage {
 	
-	public Followers_MainPage() {
+	public Followers_MainPage() throws IOException {
 		
-		driver = AllBrowsers.startBrowser("chrome", Weburl);
+		driver = AllBrowsers.startBrowser(PropertiesClass.setBrowser(), PropertiesClass.setURL());
 		
 	}
 	

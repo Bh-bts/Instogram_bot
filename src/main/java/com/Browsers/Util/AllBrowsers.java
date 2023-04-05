@@ -15,7 +15,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class AllBrowsers extends PropertiesClass{
 	
 	public static WebDriver driver;
-	public String Weburl = "https://www.instagram.com/";
 	
 	public static final String ANSI_RESET = "\u001B[0m";
     public static final String ANSI_YELLOW = "\u001B[33m";
