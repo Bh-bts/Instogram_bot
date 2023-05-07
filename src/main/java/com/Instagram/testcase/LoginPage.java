@@ -59,7 +59,13 @@ public class LoginPage extends Followers_Obj {
 		userName.sendKeys(PropertiesClass.setUserName());
 		passWord.sendKeys(PropertiesClass.setPassword());
 		logIn_btn.click();
-		Thread.sleep(5000);
+		Thread.sleep(7000);
+		
+		if(driver.findElements(By.xpath("//div[text()='Not Now']")).size() > 0) {
+			loginInfo_notNow.click();
+			
+		}
+		
 		String c = driver.manage().getCookieNamed("sessionid").getValue();
 		ss = c;
 	}

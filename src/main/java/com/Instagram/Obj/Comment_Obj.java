@@ -3,7 +3,9 @@ package com.Instagram.Obj;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class Comment_Obj extends Notification_follow_Obj{
+import com.Instagram.testcase.UploadPostPage;
+
+public class Comment_Obj extends UploadPostPage{
 	
 	public @FindBy(xpath = "//article[1]//*[local-name()='svg'][@aria-label='Comment']/ancestor::button") WebElement cmtBtn;
 	public @FindBy(xpath = "//div[@role='dialog']//article//textarea[@aria-label='Add a comment…']") WebElement cmtBox;
