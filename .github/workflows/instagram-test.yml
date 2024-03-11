@@ -3,7 +3,7 @@ name: Instagram Test
 on:
   push:
     branches:
-      - master
+      - main
   schedule:
     - cron: '30 0 * * *'
       # Allows you to run this workflow manually from the Actions tab
