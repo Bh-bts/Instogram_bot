@@ -38,7 +38,7 @@ public class LoginPage extends Browsers {
     public void login() throws InterruptedException {
         ActionsHelpers.dynamicTimeOut(userNameField);
 
-        sessionId = System.getenv("instagram_session_id");
+        sessionId = System.getenv("INSTAGRAM_SESSION_ID");
         // sessionId = null;
         if (sessionId != null) {
 
@@ -71,8 +71,8 @@ public class LoginPage extends Browsers {
      * @throws InterruptedException if the thread is interrupted while sleeping
      */
     public void performLogin() throws InterruptedException {
-        userNameField.sendKeys(System.getenv("instagram_id"));
-        passwordField.sendKeys(System.getenv("instagram_password"));
+        userNameField.sendKeys(System.getenv("INSTAGRAM_ID"));
+        passwordField.sendKeys(System.getenv("INSTAGRAM_PASSWORD"));
         loginButton.click();
         Thread.sleep(10000);
 
