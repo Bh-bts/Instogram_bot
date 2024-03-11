@@ -3,11 +3,11 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.Instagram.MainPage.Followers_MainPage">
+      <class name="testcases.FollowersPageTest">
         <methods>
           <include name="getFollowers"/>
         </methods>
-      </class> <!-- com.Instagram.MainPage.Followers_MainPage -->
+      </class> <!-- testcases.FollowersPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

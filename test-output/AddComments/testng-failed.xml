@@ -3,11 +3,11 @@
 <suite name="Failed suite [AddComments]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.Instagram.MainPage.Comments_MainPage">
+      <class name="testcases.Comments_MainPage">
         <methods>
           <include name="addComments"/>
         </methods>
-      </class> <!-- com.Instagram.MainPage.Comments_MainPage -->
+      </class> <!-- testcases.Comments_MainPage -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [AddComments] -->

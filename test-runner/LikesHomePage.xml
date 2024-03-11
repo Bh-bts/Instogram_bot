@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.Instagram.MainPage.Likes_MainHomePage"/>
+      <class name="testcases.Likes_MainHomePage"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

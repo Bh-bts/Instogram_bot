@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Instagram.MainPage.UploadPic_MainPage">
+      <class name="testcases.UploadPic_MainPage">
         <methods>
           <include name="uploadPicture"/>
         </methods>
-      </class> <!-- com.Instagram.MainPage.UploadPic_MainPage -->
+      </class> <!-- testcases.UploadPic_MainPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

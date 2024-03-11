@@ -1,60 +1,84 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-  <groupId>instagram</groupId>
-  <artifactId>InstagramProject</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
-
-  <name>InstagramProject</name>
-  <url>http://maven.apache.org</url>
-
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
-
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-    
-       <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-<dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-java</artifactId>
-    <version>4.9.0</version>
-</dependency>
+    <groupId>instagram</groupId>
+    <artifactId>InstagramProject</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
 
 
-<!-- https://mvnrepository.com/artifact/org.testng/testng -->
-<dependency>
-    <groupId>org.testng</groupId>
-    <artifactId>testng</artifactId>
-    <version>7.6.1</version>
-    <scope>test</scope>
-</dependency>
+    <name>InstagramProject</name>
+    <url>http://maven.apache.org</url>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <selenium-java.version>4.18.0</selenium-java.version>
+        <testng.version>7.8.0</testng.version>
+        <javafaker.version>1.0.2</javafaker.version>
+        <maven-surefire-plugin.version>3.2.5</maven-surefire-plugin.version>
+        <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+        <maven-surefire-report-plugin.version>3.2.5</maven-surefire-report-plugin.version>
+    </properties>
 
-	<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
-<dependency>
-    <groupId>io.github.bonigarcia</groupId>
-    <artifactId>webdrivermanager</artifactId>
-    <version>5.3.1</version>
-</dependency>
+    <dependencies>
 
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium-java.version}</version>
+        </dependency>
 
-<!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
-<dependency>
-    <groupId>com.github.javafaker</groupId>
-    <artifactId>javafaker</artifactId>
-    <version>1.0.2</version>
-</dependency>
+        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+            <scope>test</scope>
+        </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>${javafaker.version}</version>
+        </dependency>
 
-    
-  </dependencies>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven-surefire-plugin.version}</version>
+                <configuration>
+                    <!-- Configure Fork Count for Parallel Execution -->
+                    <forkCount>3</forkCount> <!-- Set the desired fork count -->
+                    <reuseForks>true</reuseForks> <!-- Set to false if you want
+					separate JVMs for each test class -->
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plugin.version}</version>
+                <configuration>
+                    <source>11</source>
+                    <target>11</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-report-plugin</artifactId>
+                <version>${maven-surefire-report-plugin.version}</version>
+            </plugin>
+        </plugins>
+    </reporting>
 </project>

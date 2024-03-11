@@ -3,7 +3,7 @@
 <suite name="AddComments">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.Instagram.MainPage.Comments_MainPage"/>
+      <class name="testcases.Comments_MainPage"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- AddComments -->
