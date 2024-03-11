@@ -34,7 +34,7 @@ public class LikesHomePage extends Browsers {
         while (likeCounter < 10) {
             for (int i = 1; i < 10; i++) {
                 WebElement like = driver.findElement(By.xpath("//article[" + i + "]//*[local-name()='svg'][@aria-label='Like']/ancestor::div[@role='button']"));
-                List<WebElement> likes = like.findElements(By.xpath("//article[\" + i + \"]//*[local-name()='svg'][@aria-label='Like']/ancestor::div[@role='button']"));
+                List<WebElement> likes = like.findElements(By.xpath("//article[" + i + "]//*[local-name()='svg'][@aria-label='Like']/ancestor::div[@role='button']"));
 
                 if (likes.size() == 1) {
                 } else {
