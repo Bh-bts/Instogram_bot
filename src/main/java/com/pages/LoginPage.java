@@ -39,7 +39,6 @@ public class LoginPage extends Browsers {
         ActionsHelpers.dynamicTimeOut(userNameField);
 
         sessionId = System.getenv("INSTAGRAM_SESSION_ID");
-        // sessionId = null;
         if (sessionId != null) {
 
             driver.manage().addCookie(new Cookie("sessionid", sessionId));

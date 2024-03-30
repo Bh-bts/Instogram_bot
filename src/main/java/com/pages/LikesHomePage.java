@@ -31,16 +31,12 @@ public class LikesHomePage extends Browsers {
 
         int likeCounter = 0;
 
-        while (likeCounter < 10) {
-            for (int i = 1; i < 10; i++) {
+        while (likeCounter < 5) {
+            for (int i = 1; i < 5; i++) {
                 WebElement like = driver.findElement(By.xpath("//article[" + i + "]//*[local-name()='svg'][@aria-label='Like']/ancestor::div[@role='button']"));
                 List<WebElement> likes = like.findElements(By.xpath("//article[" + i + "]//*[local-name()='svg'][@aria-label='Like']/ancestor::div[@role='button']"));
 
-                if (likes.size() == 1) {
-                } else {
-                    like.click();
-                }
-
+                like.click();
                 ActionsHelpers.dynamicTimeOut(like);
                 ActionsHelpers.scrollTillElement(like);
 
@@ -48,7 +44,7 @@ public class LikesHomePage extends Browsers {
 
                 likeCounter++;
 
-                if (likeCounter >= 10) {
+                if (likeCounter >= 5) {
                     return;
                 }
             }
